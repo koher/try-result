@@ -1,0 +1,230 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_TryResult, ______Target_TryResultTests);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_,  Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        _______Group_TryResult = {
+            isa = PBXGroup;
+            name = 'TryResult';
+            path = 'Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/Operators.swift', '__PBXFileRef_Sources/TryResult.swift');
+        };
+        '__PBXFileRef_Sources/Operators.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Operators.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/TryResult.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'TryResult.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_TryResult = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_TryResult;
+            buildPhases = (CompilePhase_TryResult, ___LinkPhase_TryResult);
+            buildRules = ();
+            dependencies = ();
+            name = 'TryResult';
+            productName = TryResult;
+            productReference = _____Product_TryResult;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_TryResult = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'TryResult.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_TryResult = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/Operators.swift', '__src_cc_ref_Sources/TryResult.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/Operators.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Operators.swift';
+        };
+        '__src_cc_ref_Sources/TryResult.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/TryResult.swift';
+        };
+        ___LinkPhase_TryResult = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_TryResult = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_TryResult, _ReleaseConf_TryResult);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_TryResult = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'TryResult.xcodeproj/TryResult_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'TryResult'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_TryResult = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'TryResult.xcodeproj/TryResult_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'TryResult'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_TryResult = {
+            isa = PBXTargetDependency;
+            target = ______Target_TryResult;
+        };
+        _______Group_TryResultTests = {
+            isa = PBXGroup;
+            name = 'TryResultTests';
+            path = 'Tests/TryResultTests';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/TryResultTests/TryResultTests.swift');
+        };
+        '__PBXFileRef_Tests/TryResultTests/TryResultTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'TryResultTests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_TryResultTests = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_TryResultTests;
+            buildPhases = (CompilePhase_TryResultTests, ___LinkPhase_TryResultTests);
+            buildRules = ();
+            dependencies = (__Dependency_TryResult);
+            name = 'TryResultTests';
+            productName = TryResultTests;
+            productReference = _____Product_TryResultTests;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_TryResultTests = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'TryResultTests.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_TryResultTests = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/TryResultTests/TryResultTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/TryResultTests/TryResultTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/TryResultTests/TryResultTests.swift';
+        };
+        ___LinkPhase_TryResultTests = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_TryResult_via_TryResultTests);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_TryResult_via_TryResultTests = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_TryResult;
+        };
+        _______Confs_TryResultTests = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_TryResultTests, _ReleaseConf_TryResultTests);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_TryResultTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'TryResult.xcodeproj/TryResultTests_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_TryResultTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'TryResult.xcodeproj/TryResultTests_Info.plist'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_TryResultTests = {
+            isa = PBXTargetDependency;
+            target = ______Target_TryResultTests;
+        };
+        '__PBXFileRef_TryResult.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'TryResult.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_TryResult.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_TryResult);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_TryResultTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_TryResultTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_TryResult);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_TryResult.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_TryResult.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}
